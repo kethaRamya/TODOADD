@@ -16,6 +16,16 @@ import com.iitiimshaadi.R;
 
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// react-native-camera
+import org.reactnative.camera.RNCameraPackage;
+// react-native-gesture-handler
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+// react-native-safe-area-context
+import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
+// react-native-screens
+import com.swmansion.rnscreens.RNScreensPackage;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
 
 public class PackageList {
   private Application application;
@@ -61,7 +71,12 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
-      new RNCMaskedViewPackage()
+      new RNCMaskedViewPackage(),
+      new RNCameraPackage(),
+      new RNGestureHandlerPackage(),
+      new SafeAreaContextPackage(),
+      new RNScreensPackage(),
+      new VectorIconsPackage()
     ));
   }
 }

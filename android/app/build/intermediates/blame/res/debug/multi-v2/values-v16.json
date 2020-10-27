@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/shashank/Documents/ToDoApp/to_do_app/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/shashank/Desktop/finanacepeer/TODOADD/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/shashank/.gradle/caches/transforms-2/files-2.1/a78cad849c41bea2bd7505bb4cb9aaf5/res/values-v16/values-v16.xml",
+                    "source": "/home/shashank/.gradle/caches/transforms-2/files-2.1/3edadd4c9d5723fffc87f66c5b91a254/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/shashank/.gradle/caches/transforms-2/files-2.1/7868f9612a246fb11815f78c06ebf506/res/values-v16/values-v16.xml",
+                    "source": "/home/shashank/.gradle/caches/transforms-2/files-2.1/f871d6ccaf17b9b73bdb3a6f9c0950a1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

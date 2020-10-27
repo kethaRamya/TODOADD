@@ -1,0 +1,4 @@
+#Tue Oct 27 16:31:31 IST 2020
+base.0=/home/shashank/Desktop/finanacepeer/TODOADD/android/app/build/intermediates/transforms/dexMerger/release/0
+renamed.0=classes.dex
+path.0=classes.dex

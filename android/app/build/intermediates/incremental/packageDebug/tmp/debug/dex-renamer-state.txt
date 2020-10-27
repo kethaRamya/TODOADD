@@ -1,4 +1,4 @@
-#Sun Jul 05 18:35:36 IST 2020
-base.0=/home/shashank/Documents/ToDoApp/to_do_app/android/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
+#Tue Oct 27 15:05:12 IST 2020
+base.0=/home/shashank/Desktop/finanacepeer/TODOADD/android/app/build/intermediates/transforms/dexMerger/debug/0
 renamed.0=classes.dex
+path.0=classes.dex

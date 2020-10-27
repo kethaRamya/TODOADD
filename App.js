@@ -18,15 +18,15 @@ import {
 
 import TODOApp from './src/ToDoApp'
 //import ShaadiLogin from './src/Screens/ShaadiLogin'
+import Home from './src/components/Home'
+import BottomTabNavigator from './src/Navigations/tabnavigation'
+import { NavigationContainer } from '@react-navigation/native';
 
 const App: () => React$Node = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <View style={styles.container}>
-        <TODOApp />
-      </View>
-    </>
+    <NavigationContainer>
+      <BottomTabNavigator />
+    </NavigationContainer>
   );
 };
 
