@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import com.iitiimshaadi.BuildConfig;
 import com.iitiimshaadi.R;
 
+// @react-native-community/geolocation
+import com.reactnativecommunity.geolocation.GeolocationPackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // react-native-camera
@@ -71,6 +73,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new GeolocationPackage(),
       new RNCMaskedViewPackage(),
       new RNCameraPackage(),
       new RNGestureHandlerPackage(),

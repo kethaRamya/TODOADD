@@ -20,7 +20,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 
 //const PicturePath = '';
 
-export default class MyCamera extends Component {
+export default class Capture extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -112,15 +112,50 @@ export default class MyCamera extends Component {
     }
   }
 
+  // takePicture() {
+  //   this.camera
+  //     .takePictureAsync()
+  //     .then(data => {
+  //       console.log(data.uri,"capture dtata");
+  //       //PicturePath = data.uri;
+  //       this.setState({PicturePath:data.uri})
+  //     })
+  //     .catch(err => console.error(err));
+  // }
+
+
+
   takePicture() {
-    this.camera
-      .takePictureAsync()
-      .then(data => {
-        console.log(data.uri,"capture dtata");
-        //PicturePath = data.uri;
-        this.setState({PicturePath:data.uri})
+    this.camera.takePictureAsync()
+      .then((data) => {
+        this.setState({'photoUri' : data})
+        //var uploadUrl = this.state.uploadUrl;
+
+        var photo = {
+          uri: data,
+          type: 'image/jpeg',
+          name: 'photo.jpg',
+        };
+        console.log("photo data",)
+
+        var uploadForm = new FormData()
+        uploadForm.userKey = this.state.userKey;
+        uploadForm.append('image', photo);
+        fetch('https://postman-echo.com/post', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'multipart/form-data',
+          },
+          body: uploadForm
+        })
+      .then((response) => response.text())
+      .then((responseText) => { 
+        alert(responseText);
       })
-      .catch(err => console.error(err));
+      .catch((error) => { alert('takePicture upload: ' + error) });
+      })
+      .catch(err => alert('takePicture: ' + err));
   }
 }
 
